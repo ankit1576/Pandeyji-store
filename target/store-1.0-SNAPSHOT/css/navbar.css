@@ -1,0 +1,38 @@
+.headlogo{
+    height: 58px;
+    margin: -11px;
+   
+}
+.container{
+   
+    padding-left: 15px; /* Adjust as needed */
+    padding-right: 15px; /* Adjust as needed */
+}
+.container {
+    max-width: 1491px;
+}
+.cust-bg {
+    background-image: url('../images/bg.png');
+        
+
+    }
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 242 26);
+    font-weight: 600;
+}
+
+@keyframes shine {
+    0% {
+        filter: brightness(100%);
+    }
+    50% {
+        filter: brightness(130%);
+    }
+    100% {
+        filter: brightness(100%);
+    }
+}
+
+.shining {
+    animation: shine 1s infinite;
+}

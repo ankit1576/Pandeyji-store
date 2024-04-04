@@ -1,0 +1,76 @@
+
+
+body {
+    background-image: url('../images/bg-light.png');
+   
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #ac151b;
+    border-color: #28a745;
+    font-weight: 500;
+}
+.card {
+    background-color: #e6cf0cd1;
+}
+/*@keyframes shine {
+    0% {
+        filter: brightness(100%);
+    }
+    50% {
+        filter: brightness(150%);
+    }
+    100% {
+        filter: brightness(100%);
+    }
+}
+
+.shining {
+    animation: shine 1s infinite;
+}*/
+@keyframes draw {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.stroked {
+    animation: draw 2s linear forwards;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+}
+
+.col-form-label {
+    padding-top: calc(.375rem + 1px);
+    padding-bottom: calc(.375rem + 1px);
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.btn-warning {
+    color: #202224;
+    font-weight: 500;
+    background-color: #218838;
+    border-color: #111110;
+}
+.btn-warning:hover {
+    color: #212529;
+    background-color: #e0a800;
+    border-color: #272624;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #e0a800;
+    border-color: #272624;
+}
+.space{
+    margin-bottom: 10px;
+}
