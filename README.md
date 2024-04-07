@@ -184,14 +184,16 @@ Contains web application resources such as JSP files, CSS, JavaScript, and image
 - `js`: Contains JavaScript files.
 
 ---
-##ScreenShots
-## Screenshots
+
+# Screenshots
+
+## Registration Module
 
 ![Screenshot 1](ScreenShots/49eba89f-6298-4a54-9429-e98c157fd166.png)
 
-![Screenshot 2](https://github.com/your-username/your-repository/blob/main/Screenshots/0a622b80-93f0-44c9-b711-da1cba0281a2.png)
+![Screenshot 2](ScreenShots/c64203be-a72c-45e2-bfe8-1a6bb016d193.png)
 
-![Screenshot 3](https://github.com/your-username/your-repository/blob/main/Screenshots/1514b20f-705d-448e-88fb-c5fddeac722b.png)
+![Screenshot 3]([ScreenShots/Screenshot 2024-04-07 181124.png](https://github.com/ankit1576/Pandeyji-store/blob/main/ScreenShots/Screenshot%202024-04-07%20181124.png))
 
-... and so on
+## Login Module
 
