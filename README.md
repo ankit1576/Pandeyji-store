@@ -192,8 +192,53 @@ Contains web application resources such as JSP files, CSS, JavaScript, and image
 ![Screenshot 1](ScreenShots/49eba89f-6298-4a54-9429-e98c157fd166.png)
 
 ![Screenshot 2](ScreenShots/c64203be-a72c-45e2-bfe8-1a6bb016d193.png)
-
+### Users in Database
 ![ScreenShots/Screenshot 2024-04-07 181124.png](https://github.com/ankit1576/Pandeyji-store/blob/main/ScreenShots/Screenshot%202024-04-07%20181124.png)
 
 ## Login Module
+![Screenshot 1](ScreenShots/0a622b80-93f0-44c9-b711-da1cba0281a2.png)
+
+## Login as Admin
+![Screenshot 2](ScreenShots/1c1f0405-c92f-49b3-9373-1c95638ef8a3.png)
+
+## Add Category (Admin) 
+![Screenshot 2](ScreenShots/1514b20f-705d-448e-88fb-c5fddeac722b.png)
+
+![Screenshot 2](ScreenShots/09cb4833-c0a8-4ce3-b952-794518bd022e.png)
+
+## Add Product (Admin)
+
+![Screenshot 2](ScreenShots/c89bead9-2b4a-4308-bc36-01698b04ea41.png)
+
+![ScreenShots/09cb4833-c0a8-4ce3-b952-794518bd022e.png](https://github.com/ankit1576/Pandeyji-store/blob/main/ScreenShots/Screenshot%202024-04-07%20185036.png)
+
+## Index.jsp page with Login 
+
+![Screenshot 2](ScreenShots/69fa9385-5406-4e11-bdd1-978dc890847c.png)
+
+## Toast Notifications
+
+![Screenshot 2](https://github.com/ankit1576/Pandeyji-store/blob/main/ScreenShots/Screenshot%202024-04-07%20193546.png)
+
+## Dynamic Category fetch
+
+![Screenshot 2](https://github.com/ankit1576/Pandeyji-store/blob/main/ScreenShots/Screenshot%202024-04-07%20194137.png)
+
+(![image](https://github.com/ankit1576/Pandeyji-store/assets/71921877/3ecb34b9-6992-445f-bea5-f5fa48da6633))
+
+## Dynamic Checkout Modal
+
+![ss3](https://github.com/ankit1576/Pandeyji-store/blob/main/ScreenShots/Screenshot%202024-04-07%20193650.png)
+
+## CheckOut Page
+
+![Screenshot 2](ScreenShots/bbeee164-5875-471b-8fa2-884e7469ca11.png)
+
+## About Us page
+
+![Screenshot 2](ScreenShots/43eb264c-1d4c-4271-b79f-a34115fb5612.png)
+
+## Contact Us Page
+
+![Screenshot 2](ScreenShots/687cbd7b-eefe-4cb7-a4ad-1bbd92114d2f.png)
 
