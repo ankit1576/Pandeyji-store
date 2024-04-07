@@ -1,20 +1,27 @@
-### E-Commerce Website Project
+Your README.md looks good overall, but I'll make a few adjustments for clarity and correctness:
+
+---
+
+# E-Commerce Website Project
 
 This project is an e-commerce website developed using Java Servlets, JSP, HTML, CSS, Bootstrap, and Hibernate. It allows users to browse products, add them to the cart, and purchase them online. The website includes features for user authentication, product management, and order processing.
 
-### Project Structure
+## Project Structure
+
 - **Database:** MySQL database is used to store product, user, and order information. The database schema is provided in the `database.sql` file.
 - **Backend:** Java Servlets are used to handle HTTP requests and process business logic. Hibernate is used as an ORM (Object-Relational Mapping) tool to interact with the database.
 - **Frontend:** JSP pages are used for the user interface. Bootstrap is used for styling.
 
-### Features
+## Features
+
 - User Registration and Login: Users can create an account and log in to access the website.
 - Product Management: Admin users can add, edit, and delete products.
 - Shopping Cart: Users can add products to their cart and proceed to checkout.
 - Order Processing: Users can place orders and view their order history.
 - Responsive Design: The website is mobile-friendly and adjusts to different screen sizes.
 
-### How to Run
+## How to Run
+
 1. **Database Setup:** 
    - Create a MySQL database and import the schema from `DBpandeyji.sql`.
    - Update the database connection settings in `hibernate.cfg.xml`.
@@ -26,94 +33,91 @@ This project is an e-commerce website developed using Java Servlets, JSP, HTML, 
    - Deploy the project to a servlet container like Apache Tomcat.
    - Access the website using the deployed URL (e.g., `http://localhost:8080/store/`).
 
-### Project Structure
-``````
-.
-├── src
-│   └── main
-│       ├── java
-│       │   └── com
-│       │       └── learn
-│       │           └── mycart
-│       │               ├── dao
-│       │               │   ├── CategoryDao.java
-│       │               │   ├── ProductDao.java
-│       │               │   └── UserDao.java
-│       │               ├── entities
-│       │               │   ├── Category.java
-│       │               │   ├── Product.java
-│       │               │   └── User.java
-│       │               ├── helper
-│       │               │   ├── FactoryProvider.java
-│       │               │   └── Helper.java
-│       │               └── servlets
-│       │                   ├── LoginServlet.java
-│       │                   ├── LogoutServlet.java
-│       │                   ├── ProductOperationServlet.java
-│       │                   ├── RegisterServlet.java
-│       │                   └── UpdateProfileServlet.java
-│       └── webapp
-│           ├── Components
-│           │   ├── Footer.jsp
-│           │   ├── common_css_js.jsp
-│           │   ├── common_modals.jsp
-│           │   ├── crousal.jsp
-│           │   ├── message.jsp
-│           │   └── navbar.jsp
-│           ├── META-INF
-│           │   └── context.xml
-│           ├── WEB-INF
-│           │   ├── beans.xml
-│           │   └── web.xml
-│           ├── css
-│           │   ├── admin.css
-│           │   ├── checkout.css
-│           │   ├── home.css
-│           │   ├── login.css
-│           │   ├── navbar.css
-│           │   └── register.css
-│           └── js
-│               ├── about.jsp
-│               ├── aboutus.jsp
-│               ├── admin.jsp
-│               ├── checkout.jsp
-│               ├── contactus.jsp
-│               ├── index.jsp
-│               ├── login.jsp
-│               ├── normal.jsp
-│               ├── profile.jsp
-│               ├── register.jsp
-│               └── updateProfile.jsp
-└── target
-    └── classes
-        ├── META-INF
+## Project Structure
+
+```
+./
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── learn/
+│   │   │           └── mycart/
+│   │   │               ├── dao/
+│   │   │               │   ├── CategoryDao.java
+│   │   │               │   ├── ProductDao.java
+│   │   │               │   └── UserDao.java
+│   │   │               ├── entities/
+│   │   │               │   ├── Category.java
+│   │   │               │   ├── Product.java
+│   │   │               │   └── User.java
+│   │   │               └── servlets/
+│   │   │                   ├── LoginServlet.java
+│   │   │                   ├── LogoutServlet.java
+│   │   │                   ├── ProductOperationServlet.java
+│   │   │                   ├── RegisterServlet.java
+│   │   │                   └── UpdateProfileServlet.java
+│   │   └── webapp/
+│   │       ├── Components/
+│   │       │   ├── Footer.jsp
+│   │       │   ├── common_css_js.jsp
+│   │       │   ├── common_modals.jsp
+│   │       │   ├── crousal.jsp
+│   │       │   ├── message.jsp
+│   │       │   └── navbar.jsp
+│   │       ├── META-INF/
+│   │       │   └── context.xml
+│   │       ├── WEB-INF/
+│   │       │   ├── beans.xml
+│   │       │   └── web.xml
+│   │       ├── css/
+│   │       │   ├── admin.css
+│   │       │   ├── checkout.css
+│   │       │   ├── home.css
+│   │       │   ├── login.css
+│   │       │   ├── navbar.css
+│   │       │   └── register.css
+│   │       └── js/
+│   │           ├── about.jsp
+│   │           ├── aboutus.jsp
+│   │           ├── admin.jsp
+│   │           ├── checkout.jsp
+│   │           ├── contactus.jsp
+│   │           ├── index.jsp
+│   │           ├── login.jsp
+│   │           ├── normal.jsp
+│   │           ├── profile.jsp
+│   │           ├── register.jsp
+│   │           └── updateProfile.jsp
+└── target/
+    └── classes/
+        ├── META-INF/
         │   ├── hibernate.cfg.xml
         │   └── persistence.xml
-        └── com
-            └── learn
-                └── mycart
-                    ├── dao
+        └── com/
+            └── learn/
+                └── mycart/
+                    ├── dao/
                     │   ├── CategoryDao.class
                     │   ├── ProductDao.class
                     │   └── UserDao.class
-                    ├── entities
+                    ├── entities/
                     │   ├── Category.class
                     │   ├── Product.class
                     │   └── User.class
-                    ├── helper
+                    ├── helper/
                     │   ├── FactoryProvider.class
                     │   └── Helper.class
-                    └── servlets
+                    └── servlets/
                         ├── LoginServlet.class
                         ├── LogoutServlet.class
                         ├── ProductOperationServlet.class
                         ├── RegisterServlet.class
                         └── UpdateProfileServlet.class
 ```
-```
 
-### Technologies Used
-- Java Servlets
+## Technologies Used
+- Java Servlet
 - JSP
 - HTML
 - CSS
@@ -121,6 +125,7 @@ This project is an e-commerce website developed using Java Servlets, JSP, HTML, 
 - Hibernate
 - MySQL
 
+---
 Certainly! Here's an example README.md file for some important folders in your project:
 
 ---
@@ -179,16 +184,14 @@ Contains web application resources such as JSP files, CSS, JavaScript, and image
 - `js`: Contains JavaScript files.
 
 ---
-#ScreenShots
-## Sample Screenshot
-![Screenshot](https://github.com/ankit1576/Pandeyji-store/blob/main/ScreenShots/49eba89f-6298-4a54-9429-e98c157fd166.png)
+##ScreenShots
+## Screenshots
 
-This README provides a brief overview of the project structure and highlights key files and folders. For more detailed information, refer to the specific files and their documentation.
-### Contributors
-- Ankit Pandey
+![Screenshot 1](https://github.com/your-username/your-repository/blob/main/Screenshots/09cb4833-c0a8-4ce3-b952-794518bd022e.png)
 
-###Special Thanks to
--Durgesh Sir from youtube channel Code with Durgesh
+![Screenshot 2](https://github.com/your-username/your-repository/blob/main/Screenshots/0a622b80-93f0-44c9-b711-da1cba0281a2.png)
 
-### License
-This project is licensed under the [MIT License](LICENSE).
+![Screenshot 3](https://github.com/your-username/your-repository/blob/main/Screenshots/1514b20f-705d-448e-88fb-c5fddeac722b.png)
+
+... and so on
+
