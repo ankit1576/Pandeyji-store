@@ -179,6 +179,9 @@ Contains web application resources such as JSP files, CSS, JavaScript, and image
 - `js`: Contains JavaScript files.
 
 ---
+#ScreenShots
+## Sample Screenshot
+![Screenshot](https://github.com/ankit1576/Pandeyji-store/blob/main/ScreenShots/49eba89f-6298-4a54-9429-e98c157fd166.png)
 
 This README provides a brief overview of the project structure and highlights key files and folders. For more detailed information, refer to the specific files and their documentation.
 ### Contributors
