@@ -193,7 +193,7 @@ Contains web application resources such as JSP files, CSS, JavaScript, and image
 
 ![Screenshot 2](ScreenShots/c64203be-a72c-45e2-bfe8-1a6bb016d193.png)
 
-![Screenshot 3]([ScreenShots/Screenshot 2024-04-07 181124.png](https://github.com/ankit1576/Pandeyji-store/blob/main/ScreenShots/Screenshot%202024-04-07%20181124.png))
+![ScreenShots/Screenshot 2024-04-07 181124.png](https://github.com/ankit1576/Pandeyji-store/blob/main/ScreenShots/Screenshot%202024-04-07%20181124.png)
 
 ## Login Module
 
