@@ -65,5 +65,8 @@
                 </div>
             </div>
         </div>
+
+        <%@include file="Components/common_modals.jsp" %>
+        <%@include file="Components/Footer.jsp" %>
     </body>
 </html>

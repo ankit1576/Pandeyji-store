@@ -52,7 +52,7 @@ public class LoginServlet extends HttpServlet {
                         //admin.jsp
                         response.sendRedirect("admin.jsp");
                     } else if (user.getUserType().equals("normal")) {   //normal.jsp
-                        response.sendRedirect("normal.jsp");
+                        response.sendRedirect("index.jsp");
                     } else {
                         out.println("We have not identified user type");
                     }

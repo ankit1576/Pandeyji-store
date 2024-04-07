@@ -21,5 +21,8 @@
     </head>
     <body>
         <%@include file="Components/navbar.jsp" %>
+        <%@include file="Components/common_modals.jsp" %>
+        <%@include file="Components/Footer.jsp" %>
+
     </body>
 </html>

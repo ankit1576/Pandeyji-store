@@ -12,6 +12,18 @@
         <servlet-name>LogoutServlet</servlet-name>
         <servlet-class>com.learn.mycart.servlets.LogoutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ProductOperationServlet</servlet-name>
+        <servlet-class>com.learn.mycart.servlets.ProductOperationServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>updateProfileServlet</servlet-name>
+        <servlet-class>com.learn.mycart.servlets.updateProfileServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <servlet-class>com.learn.mycart.servlets.UpdateProfileServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/RegisterServlet</url-pattern>
@@ -23,6 +35,18 @@
     <servlet-mapping>
         <servlet-name>LogoutServlet</servlet-name>
         <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductOperationServlet</servlet-name>
+        <url-pattern>/ProductOperationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>updateProfileServlet</servlet-name>
+        <url-pattern>/updateProfileServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <url-pattern>/UpdateProfileServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

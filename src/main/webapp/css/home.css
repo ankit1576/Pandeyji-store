@@ -1,0 +1,51 @@
+
+.card {
+    background-color: #ffffff9e!important;
+}
+
+.card {
+
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+    background: #fff!important;
+    cursor: pointer;
+}
+.btn-success {
+    color: #fff;
+    background-color: #ac151b!important;
+    border-color: #28a745;
+    font-weight: 500!important;
+}
+.list-group-item-action:hover {
+    color: #111110;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #f87171 !important;
+}
+
+.list-group-item.active {
+     z-index: 2;
+    background: #dc2626 !important;
+    color: #f6f6ed;
+    border: 2px solid #1a1a17;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.discount-label{
+    font-size: 10px!important;
+    font-style: italic!important;
+    /*text-decoration: line-through!important;*/
+}
+ 
+
+.b:hover {
+    color: #fff;
+    background-color: #dc2626!important;
+    border-color: #1e7e34;
+}

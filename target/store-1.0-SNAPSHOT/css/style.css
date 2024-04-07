@@ -1,0 +1,85 @@
+body {
+    background-image: url('../images/bg-light.png');
+
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.list-group-item-action
+{
+    background: #bd2f34cc!important;
+}
+.custom-bg{
+    background:#861c20!important;
+}
+
+.product-card:hover{
+    background:#e2e2e2;
+    cursor: pointer;
+
+
+}
+.list-group-item-action:focus, .list-group-item-action:hover {
+    color: #fff11a;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #1368bc;
+}
+.list-group-item-action {
+    width: 100%;
+    color: #fff;
+    text-align: inherit;
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    border: 2px solid #fbea1a;
+}
+
+
+/*toast*/
+
+#toast {
+    min-width: 300px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -120px;
+    background: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    font-size: 18px;
+    visibility: hidden;
+    box-shadow: 0px 0px 100px #000;
+}
+
+#toast.display {
+    visibility: visible;
+    animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+    

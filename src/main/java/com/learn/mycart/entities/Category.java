@@ -2,6 +2,7 @@ package com.learn.mycart.entities;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,6 +16,7 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int categoryId;
     private String categoryTitle;
+     @Column(length = 1500, name = "categoryDescription")
     private String categoryDescription;
     @OneToMany(mappedBy = "category")
     private List<Product> products = new ArrayList<>();
@@ -30,6 +32,9 @@ public class Category {
         this.categoryTitle = categoryTitle;
         this.categoryDescription = categoryDescription;
     }
+
+    public Category() {
+      }
 
     public int getCategoryId() {
         return categoryId;

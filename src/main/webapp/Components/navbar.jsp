@@ -1,3 +1,7 @@
+<%@page import="java.util.List"%>
+<%@page import="com.learn.mycart.dao.CategoryDao"%>
+<%@page import="com.learn.mycart.helper.FactoryProvider"%>
+<%@page import="com.learn.mycart.entities.Category"%>
 <%@page import="com.learn.mycart.entities.User"%>
 <link rel="stylesheet" type="text/css" href="css/navbar.css">
 
@@ -9,7 +13,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark cust-bg">
     <div class="container">
         <a class="navbar-brand " href="index.jsp"><img class="headlogo shining" src="images/logo/logo.png" alt="Pandey-ji Store"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -22,15 +26,18 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Shop Now
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Gajak's</a>
-                        <a class="dropdown-item" href="#">Soan-Papdi</a>
-                        <a class="dropdown-item" href="#">Lattha's</a>
-                        <a class="dropdown-item" href="#">Petha's</a>
-                        <a class="dropdown-item" href="#">Namkeen's</a>
+                    <!--                            // this category list is dynamic from database-->
+                    <%                                CategoryDao cdao1 = new CategoryDao(FactoryProvider.getFactory());
+                        List<Category> productlist = cdao1.getCategories();
 
+                    %>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <% for (Category c : productlist) {%>
+                        <a class="dropdown-item" href="/store/index.jsp?category=<%=c.getCategoryId()%>"><%=c.getCategoryTitle()%></a>
+                        <% } %>   
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Shop All</a>
+                        <a class="dropdown-item" href="index.jsp?category=all">Shop All</a>
                     </div>
 
                 </li>
@@ -39,30 +46,28 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#contactus.jsp">Contact Us</a>
+                    <a class="nav-link" href="contactus.jsp">Contact Us</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <%                    if (user1 == null) {
 
                 %>
-
                 <li class="nav-item active">
                     <a class="nav-link" href="login.jsp">Login </a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="register.jsp"> Register</a>
                 </li>
-                <% } 
-                 else {
+                <% } else {
                 %>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"><%=user1.getUserName() %></a>
+                    <a class="nav-link" href="<%=  user1.getUserType().equals("admin") ? "admin.jsp" : "updateProfile.jsp"%>"><%= user1.getUserName()%> </a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="LogoutServlet">LogOut</a>
                 </li>
- 
+
 
                 <%  }
                 %>
@@ -70,5 +75,15 @@
 
             </ul>
         </div>
+
+        <!-- Cart icon -->
+        <div class="cart-icon">
+            <a  class="nav-link" href="#" data-toggle="modal" data-target="#cart">
+                <i class="fas fa-shopping-cart f"></i>
+                <span id="cartCount" class="cart-items">(10)</span>
+            </a>
+
+        </div>
+
     </div>
 </nav>

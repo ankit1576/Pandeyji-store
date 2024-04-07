@@ -1,10 +1,10 @@
 .headlogo{
     height: 58px;
     margin: -11px;
-   
+
 }
 .container{
-   
+
     padding-left: 15px; /* Adjust as needed */
     padding-right: 15px; /* Adjust as needed */
 }
@@ -13,9 +13,8 @@
 }
 .cust-bg {
     background-image: url('../images/bg.png');
-        
+}
 
-    }
 .navbar-dark .navbar-nav .nav-link {
     color: rgb(255 242 26);
     font-weight: 600;
@@ -36,3 +35,36 @@
 .shining {
     animation: shine 1s infinite;
 }
+
+.setup
+{
+    padding: 59px!important;
+    text-decoration: none;
+    color: white;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    text-decoration: none;
+    -webkit-text-decoration-skip: objects;
+}
+hr {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    border: 2;
+    border-color: yellow;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    background: yellow;
+}
+a:hover {
+    color: #e5e500;
+    text-decoration: auto;
+    font-weight: 500;
+}
+
+.f
+{
+    margin-left: 1.0rem;
+}
+

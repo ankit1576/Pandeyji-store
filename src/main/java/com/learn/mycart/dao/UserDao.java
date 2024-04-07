@@ -3,6 +3,7 @@ package com.learn.mycart.dao;
 import com.learn.mycart.entities.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
 public class UserDao {
@@ -12,7 +13,7 @@ public class UserDao {
     public UserDao(SessionFactory factory) {
         this.factory = factory;
     }
-
+     
     //get user by email and password
     public User getUserByEmailAndPassword(String email, String password) {
         User user = null;
@@ -35,5 +36,37 @@ public class UserDao {
 
         return user;
     }
+    public User getUserById(int userId) {
+    Session session = this.factory.openSession();
+    User user = null;
+    try {
+        String query = "from User where userId =: id";
+        Query q = session.createQuery(query);
+        q.setParameter("id", userId);
+        user = (User) q.uniqueResult();
+    } catch (Exception e) {
+        e.printStackTrace();
+    } finally {
+        session.close();
+    }
+    return user;
+}
+public void updateUser(User user) {
+    Session session = this.factory.openSession();
+    Transaction tx = null;
+    try {
+        tx = session.beginTransaction();
+        session.update(user);
+        tx.commit();
+    } catch (Exception e) {
+        if (tx != null) {
+            tx.rollback();
+        }
+        e.printStackTrace();
+    } finally {
+        session.close();
+    }
+}
+
 
 }

@@ -1,0 +1,17 @@
+
+.btn-success {
+    color: #fff;
+    background-color: #ac151b!important;
+    border-color: #28a745;
+    font-weight: 500!important;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #df1313 !important;
+    border-color: #1e7e34;
+}
+.text-center {
+    margin-top: 13px;
+    text-align: center !important;
+}
+
