@@ -187,7 +187,7 @@ Contains web application resources such as JSP files, CSS, JavaScript, and image
 ##ScreenShots
 ## Screenshots
 
-![Screenshot 1](https://github.com/your-username/your-repository/blob/main/Screenshots/09cb4833-c0a8-4ce3-b952-794518bd022e.png)
+![Screenshot 1](ScreenShots/49eba89f-6298-4a54-9429-e98c157fd166.png)
 
 ![Screenshot 2](https://github.com/your-username/your-repository/blob/main/Screenshots/0a622b80-93f0-44c9-b711-da1cba0281a2.png)
 
