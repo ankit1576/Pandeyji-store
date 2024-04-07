@@ -8,7 +8,7 @@ This project is an e-commerce website developed using Java Servlets, JSP, HTML, 
 
 ## Project Structure
 
-- **Database:** MySQL database is used to store product, user, and order information. The database schema is provided in the `database.sql` file.
+- **Database:** MySQL database is used to store product, user, and order information. The database schema is provided in the `database Export` file.
 - **Backend:** Java Servlets are used to handle HTTP requests and process business logic. Hibernate is used as an ORM (Object-Relational Mapping) tool to interact with the database.
 - **Frontend:** JSP pages are used for the user interface. Bootstrap is used for styling.
 
