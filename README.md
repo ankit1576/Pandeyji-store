@@ -8,7 +8,7 @@ This project is an e-commerce website developed using Java Servlets, JSP, HTML, 
 
 ## Project Structure
 
-- **Database:** MySQL database is used to store product, user, and order information. The database schema is provided in the `database Export` file.
+- **Database:** MySQL database is used to store product, user, and order information. The database schema is provided in the `Database Export` file.
 - **Backend:** Java Servlets are used to handle HTTP requests and process business logic. Hibernate is used as an ORM (Object-Relational Mapping) tool to interact with the database.
 - **Frontend:** JSP pages are used for the user interface. Bootstrap is used for styling.
 
@@ -23,7 +23,7 @@ This project is an e-commerce website developed using Java Servlets, JSP, HTML, 
 ## How to Run
 
 1. **Database Setup:** 
-   - Create a MySQL database and import the schema from `DBpandeyji.sql`.
+   - Create a MySQL database and import the schema from `Database Export/DBpandeyji.sql`.
    - Update the database connection settings in `hibernate.cfg.xml`.
 
 2. **Hibernate Configuration:**
