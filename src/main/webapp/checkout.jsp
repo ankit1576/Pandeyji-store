@@ -19,6 +19,8 @@
         <title>Checkout</title>
         <%@include file="Components/common_css_js.jsp" %>
         <link rel="stylesheet" href="css/checkout.css"> 
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
     </head>
     <body style=" background-image: url('images/bg-light.png');
@@ -30,6 +32,7 @@
         <%@include  file="Components/navbar.jsp" %>
 
         <div class="container">
+
             <div class="row mt-5">                
 
                 <div class="col-md-6">
@@ -77,7 +80,7 @@
 
 
                                 <div class="container text-center">
-                                    <button class="btn btn-success"> <i class="fas fa-clipboard-check"></i>&nbsp;Order Now</button>
+                                    <button class="btn btn-success" onclick="handlePayment()"> <i class="fas fa-clipboard-check"></i>&nbsp;Order Now</button>
                                     <a class="btn btn-outline-primary" href="index.jsp">
                                         <i class="fas fa-shopping-cart"></i> &nbsp;Continue Shopping
                                     </a>
@@ -91,6 +94,12 @@
             </div>
 
         </div>
+        <!-- Modal -->
+        <div id="paymentSuccessModal" class="modal" style="display: none; position: fixed; z-index: 1000; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.5); width: 300px; padding: 20px; text-align: center;">
+            <img src="images/logo/preview.gif" alt="Payment Success" style="width: 100%; max-width: 200px;">
+            <p style="color: white; font-size: 24px; margin-top: 20px;">Payment Successful! Wait Redirecting to Home page</p>
+        </div>
+
 
 
         <%@include  file="Components/common_modals.jsp" %>

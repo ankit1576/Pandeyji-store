@@ -1,3 +1,4 @@
+let totalPrice = 0;
 function add_to_cart(pid, pname, price, productImage) {
     let cart = localStorage.getItem("cart");
     if (cart == null) {
@@ -57,6 +58,7 @@ function updateCart() {
         $(".cart-items").html(""); // Empty string when cart is empty
         $(".cart-body").html("<h3>Cart does not have any items  <a href='index.jsp'>Shop now </a></h3>");
         $(".checkout-btn").attr('disabled', true)
+        totalPrice = 0;
     } else {
         // Cart is not empty
         console.log(cart)
@@ -74,7 +76,7 @@ function updateCart() {
             </thead>
         `;
 
-        let totalPrice = 0;
+
         cart.map((item) => {
             table += `
     <tr>
@@ -168,4 +170,70 @@ function decreaseQuantity(pid) {
 
     localStorage.setItem('cart', JSON.stringify(updatedCart));
     updateCart();
+}
+
+// first request to server to create order
+//const paymentStart = () => {
+//    // Prevent the default behavior of the button click event
+//    console.log("Payment started");
+//    let amount = totalPrice;
+//    console.log(amount);
+//    if (amount == '' || amount == null || amount == 0)
+//    {
+//        alert("INVALID amount");
+//
+//        return;
+//    }
+//    // code..
+//    //using ajax to create order using jquery
+//    $.ajax(
+//            {
+//                url='/user/create_order',
+//                data:JSON.stringify({amount:amount,info:'order_request'}),
+//                contentType: 'application/json',
+//                type: 'POST',
+//                dataType: 'json',
+//                success: function (response) {
+//                    //invoked when success
+//                    console.log(response);
+//                },
+//                error: function (error) {
+//                   //invoked when error 
+//                   console.log(error);
+//                    alert("SOme thing Went wrong")
+//                }
+//                
+//            })
+//}
+
+function handlePayment() {
+    event.preventDefault();
+    var options = {
+        key: 'rzp_test_vAMKXpLeKFcnlF', // Replace with your Razorpay API Key
+        amount: totalPrice * 100, // Amount in paise (e.g., 50000 for ₹500)
+        currency: 'INR',
+        name: 'PANDEY-ji store',
+        description: 'Product Purchase',
+        image: 'images/logo/logo.png',
+        handler: function (response) {
+            // Clear the localStorage
+            localStorage.clear();
+
+            // Show the payment success modal
+            var modal = document.getElementById("paymentSuccessModal");
+            modal.style.display = "block";
+
+            // Redirect to the home page after a delay
+            setTimeout(function () {
+                window.location.href = 'index.jsp';
+            }, 3000); // 3000 milliseconds = 3 seconds
+        },
+        prefill: {
+            name: 'John Doe',
+            email: 'john.doe@example.com'
+        }
+    };
+
+    var rzp = new Razorpay(options);
+    rzp.open();
 }
